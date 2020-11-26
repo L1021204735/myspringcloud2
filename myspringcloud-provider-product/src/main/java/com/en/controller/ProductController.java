@@ -18,15 +18,15 @@ public class ProductController {
 
     @RequestMapping(value="/getInfoById/{id}")
     public Object get(@PathVariable("id") long id) {
-        return this.iProductService.getInfoById(id) ;
+        return this.iProductService.getInfoById(id);
     }
     @RequestMapping(value="/addInfo")
     public Object add(@RequestBody ProductPo productPo) {
-        return this.iProductService.addInfo(productPo) ;
+        return this.iProductService.addInfo(productPo);
     }
     @RequestMapping(value="/getAllInfo")
     public Object list() {
-        return this.iProductService.getAllInfo() ;
+        return this.iProductService.getAllInfo();
     }
 
 }
